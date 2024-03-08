@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Header() {
     return (
         <>
@@ -50,7 +52,7 @@ function Header() {
                             <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
                                 <ul className="navbar-nav">
                                     <li className="nav-item">
-                                        <a className="nav-link active" aria-current="page" href="#hero">HOME</a>
+                                        <Link className="nav-link active" aria-current="page" to="/">HOME</Link>
                                     </li>
                                     <li className="nav-item">
                                         <a className="nav-link" href="#">ABOUT</a>
@@ -61,7 +63,7 @@ function Header() {
                                     <li className="nav-item dropdown">
                                         <a className="nav-link dropdown-toggle" href="#menu" data-bs-toggle="dropdown">MENU</a>
                                         <ul className="dropdown-menu">
-                                            <li><a className="dropdown-item" href="#">Lunch</a></li>
+                                            <li><Link className="dropdown-item" to="/foodmenulist">Lunch</Link></li>
                                             <li><a className="dropdown-item" href="#">Dinner</a></li>
                                             <li><a className="dropdown-item" href="#">Desserts</a></li>
                                             <li><a className="dropdown-item" href="#">Drinks</a></li>
@@ -74,7 +76,7 @@ function Header() {
                                         <a className="nav-link" href="#gallery">GALLERY</a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link" href="#contact">CONTACT</a>
+                                        <Link className="nav-link" to="/contact">CONTACT</Link>
                                     </li>
                                     <li className="nav-item ">
                                         <a className="nav-link">BLOG</a>

@@ -315,7 +315,7 @@ img {
     background: url(../images/ban3.jpg);
 }
 
-.get-in-touch-section h2 {
+.get-in-touch-section h1,h2 {
     color: #fff;
 }
 

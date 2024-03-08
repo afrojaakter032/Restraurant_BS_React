@@ -6,6 +6,7 @@ import RestrontsSection from "./_RestrontsSection"
 import TodaysSpecialSection from "./_TodaysSpecialSection"
 import OurMenuSection from "./_OurMenuSection"
 import OurGallerySection from "./_OurGallerySection"
+import NoticeSection from "./_NoticeSection"
 
 function Home() {
     return (
@@ -26,6 +27,8 @@ function Home() {
                 <ExperienceSection />
 
                 <OurGallerySection />
+                
+                < NoticeSection />
             </Layout>
         </>
     )

@@ -2,21 +2,9 @@ var swiper = new Swiper('.swiper', {
     slidesPerView: 3,
     loop: true,
     autoplay: true,
-    
-    
-    
-    
-
-    
     pagination: {
         el: '.swiper-pagination',
     },
-
-    
-    // navigation: {
-    //     nextEl: '.swiper-button-next',
-    //     prevEl: '.swiper-button-prev',
-    // }
 }); 
 
 new countUp.CountUp('YearsOfExperience', 23).start();
