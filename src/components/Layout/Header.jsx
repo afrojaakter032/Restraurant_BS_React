@@ -44,7 +44,7 @@ function Header() {
                 <section className="navbar-section">
                     <nav className="navbar navbar-expand-lg">
                         <div className="container-fluid">
-                            <a className="navbar-brand nav-link fs-2" href="#">PLATO</a>
+                            <a className="navbar-brand nav-link fs-2" href="#">Burger Bar</a>
                             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                                 <span className="navbar-toggler-icon fs-2 mt-3"><i className="fa-solid fa-bars"></i></span>

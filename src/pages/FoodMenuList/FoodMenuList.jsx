@@ -5,12 +5,12 @@ function MenuItem({ imageUrl, title, description, price }) {
     return (
         <div className="col-md-6">
             <div className="d-flex gap-3 menu-item-card">
-                {imageUrl && (
+                
                     <div className="position-relative">
-                        <img src={imageUrl} alt="image" />
+                        <img className="rounded-circle" src={imageUrl ?? "https://placehold.co/80x80?text=Restraurant"}  alt="image"  />
                         <div className="menu-bedge">New</div>
                     </div>
-                )}
+                
                 <div className="w-100">
                     <h4>{title}</h4>
                     <p>{description}</p>
@@ -21,10 +21,10 @@ function MenuItem({ imageUrl, title, description, price }) {
     );
 }
 function FoodMenuList() {
-    let {slug} = useParams();
+    let { slug } = useParams();
 
     const menuItems = [
-        { imageUrl: "/assets/images/t1.jpg", title: "Roasted Steak Roulade", description: "Mint parsley with apple cider vinegar, salt, sugar & spices", price: "$20.15" },
+        { imageUrl: null, title: "Roasted Steak Roulade", description: "Mint parsley with apple cider vinegar, salt, sugar & spices", price: "$20.15" },
         { imageUrl: "/assets/images/t2.jpg", title: "Fresh Baked Chicken Pot Pie", description: "Mint parsley with apple cider vinegar, salt, sugar & spices", price: "$20.15" },
         { imageUrl: "/assets/images/t3.jpg", title: "Butterball Turkey & Dressing", description: "Mint parsley with apple cider vinegar, salt, sugar & spices", price: "$20.15" },
         { imageUrl: "/assets/images/t4.jpg", title: "Mushroom ‘n Swiss Chicken", description: "Mint parsley with apple cider vinegar, salt, sugar & spices", price: "$20.15" },
@@ -33,7 +33,7 @@ function FoodMenuList() {
         { imageUrl: "/assets/images/t3.jpg", title: "Roasted Steak Roulade", description: "Mint parsley with apple cider vinegar, salt, sugar & spices", price: "$20.15" },
         { imageUrl: "/assets/images/t4.jpg", title: "Roasted Steak Roulade", description: "Mint parsley with apple cider vinegar, salt, sugar & spices", price: "$20.15" },
     ];
-    
+
     return (
         <>
             <Layout>
@@ -42,124 +42,18 @@ function FoodMenuList() {
                         <div className="col-md-12 text-center mb-5 text-primary">
                             <h1 className="text-capitalize">{slug}</h1>
                         </div>
-                        {/* <div className="col-md-6">
-                            <div className="d-flex gap-3 menu-item-card">
-                                <div className="position-relative">
-                                    <img src="/assets/images/t1.jpg" alt="image" />
-                                    <div className="menu-bedge">New</div>
-                                </div>
-                                <div className="w-100">
-                                    <h4>Roasted Steak Roulade</h4>
-                                    <p>Mint parsley with apple cider vinegar, salt,<br />
-                                        sugar & spices</p>
-                                </div>
-                                <div className="text-primary text-end">$20.15</div>
-                            </div>
-                        </div>
-                        <div className="col-md-6">
-                            <div className="d-flex gap-3 menu-item-card">
-                                <div>
-                                    <img src="/assets/images/t2.jpg" alt="image" />
-                                </div>
-                                <div className="w-100">
-                                    <h4>Fresh Baked Chicken Pot Pie</h4>
-                                    <p>Mint parsley with apple cider vinegar, salt,<br />
-                                        sugar & spices</p>
-                                </div>
-                                <div className="text-primary text-end">$20.15</div>
-                            </div>
-                        </div>
-                        <div className="col-md-6">
-                            <div className="d-flex gap-3 menu-item-card">
-                                <div>
-                                    <img src="/assets/images/t3.jpg" alt="image" />
-                                </div>
-                                <div className="w-100">
-                                    <h4>Butterball Turkey & Dressing</h4>
-                                    <p>Mint parsley with apple cider vinegar, salt,<br />
-                                        sugar & spices</p>
-                                </div>
-                                <div className="text-primary text-end">$20.15</div>
-                            </div>
-                        </div>
-                        <div className="col-md-6">
-                            <div className="d-flex gap-3 menu-item-card">
-                                <div>
-                                    <img src="/assets/images/t4.jpg" alt="image" />
-                                </div>
-                                <div className="w-100">
-                                    <h4>Mushroom ‘n Swiss Chicken</h4>
-                                    <p>Mint parsley with apple cider vinegar, salt,<br />
-                                        sugar & spices</p>
-                                </div>
-                                <div className="text-primary text-end">$20.15</div>
-                            </div>
-                        </div>
-                        <div className="col-md-6">
-                            <div className="d-flex gap-3 menu-item-card">
-                                <div>
-                                    <img src="/assets/images/t1.jpg" alt="image" />
-                                </div>
-                                <div className="w-100">
-                                    <h4>Roasted Steak Roulade</h4>
-                                    <p>Mint parsley with apple cider vinegar, salt,<br />
-                                        sugar & spices</p>
-                                </div>
-                                <div className="text-primary text-end">$20.15</div>
-                            </div>
-                        </div>
-                        <div className="col-md-6">
-                            <div className="d-flex gap-3 menu-item-card">
-                                <div>
-                                    <img src="/assets/images/t2.jpg" alt="image" />
-                                </div>
-                                <div className="w-100">
-                                    <h4>Fresh Baked Chicken Pot Pie</h4>
-                                    <p>Mint parsley with apple cider vinegar, salt,<br />
-                                        sugar & spices</p>
-                                </div>
-                                <div className="text-primary text-end">$20.15</div>
-                            </div>
-                        </div>
-                        <div className="col-md-6">
-                            <div className="d-flex gap-3 menu-item-card">
-                                <div>
-                                    <img src="/assets/images/t3.jpg" alt="image" />
-                                </div>
-                                <div className="w-100">
-                                    <h4>Butterball Turkey & Dressing</h4>
-                                    <p>Mint parsley with apple cider vinegar, salt,<br />
-                                        sugar & spices</p>
-                                </div>
-                                <div className="text-primary text-end">$20.15</div>
-                            </div>
-                        </div>
-                        <div className="col-md-6">
-                            <div className="d-flex gap-3 menu-item-card">
-                                <div>
-                                    <img src="/assets/images/t4.jpg" alt="image" />
-                                </div>
-                                <div className="w-100">
-                                    <h4>Mushroom ‘n Swiss Chicken</h4>
-                                    <p>Mint parsley with apple cider vinegar, salt,<br />
-                                        sugar & spices</p>
-                                </div>
-                                <div className="text-primary text-end">$20.15</div>
-                            </div>
-                        </div> */}
+
+                        {menuItems.map((item, index) => (
+                            <MenuItem
+                                key={index}
+                                imageUrl={item.imageUrl}
+                                title={item.title}
+                                description={item.description}
+                                price={item.price}
+                            />
+                        ))}
                     </div>
                 </section>
-                <div className="row mt-3 p-5">
-                            {menuItems.map((item, index) => (
-                                <MenuItem
-                                    key={index}
-                                    imageUrl={item.imageUrl}
-                                    title={item.title}
-                                    description={item.description}
-                                    price={item.price}
-                                />
-                            ))}
-                        </div>
             </Layout>
         </>
     )
