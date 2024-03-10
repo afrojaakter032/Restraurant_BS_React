@@ -17,12 +17,12 @@ function NoticeCard({ imageUrl, title, content }) {
 
 function NoticeSection() {
     const notices = [
-        { imageUrl: "./assets/images/notice1.jpg", title: "Spice chicken", content: "Some quick example text to build on the card title and make up the bulk of the card's content." },
-        { imageUrl: "./assets/images/chicken-fast-food-notice2.jpg", title: "Spice chicken", content: "Some quick example text to build on the card title and make up the bulk of the card's content." },
-        { imageUrl: "./assets/images/notice3.jpg", title: "Spice chicken", content: "Some quick example text to build on the card title and make up the bulk of the card's content." },
-        { imageUrl: "./assets/images/chicken-fast-food-notice2.jpg", title: "Spice chicken", content: "Some quick example text to build on the card title and make up the bulk of the card's content." },
-        { imageUrl: "./assets/images/notice3.jpg", title: "Spice chicken", content: "Some quick example text to build on the card title and make up the bulk of the card's content." },
-        { imageUrl: "./assets/images/notice1.jpg", title: "Spice chicken", content: "Some quick example text to build on the card title and make up the bulk of the card's content." }
+        { imageUrl: "/assets/images/notice1.jpg", title: "Spice chicken", content: "Some quick example text to build on the card title and make up the bulk of the card's content." },
+        { imageUrl: "/assets/images/chicken-fast-food-notice2.jpg", title: "Spice chicken", content: "Some quick example text to build on the card title and make up the bulk of the card's content." },
+        { imageUrl: "/assets/images/notice3.jpg", title: "Spice chicken", content: "Some quick example text to build on the card title and make up the bulk of the card's content." },
+        { imageUrl: "/assets/images/chicken-fast-food-notice2.jpg", title: "Spice chicken", content: "Some quick example text to build on the card title and make up the bulk of the card's content." },
+        { imageUrl: "/assets/images/notice3.jpg", title: "Spice chicken", content: "Some quick example text to build on the card title and make up the bulk of the card's content." },
+        { imageUrl: "/assets/images/notice1.jpg", title: "Spice chicken", content: "Some quick example text to build on the card title and make up the bulk of the card's content." }
     ];
 
     return (

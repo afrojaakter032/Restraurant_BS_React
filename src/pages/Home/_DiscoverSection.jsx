@@ -14,7 +14,7 @@ function DiscoverSection() {
                     <div className="row mt-4 p-3">
                         <div className="col-md-6">
                             <div>
-                                <img src="./assets/images/discover_combine.png" alt="image" height="300" width="450" />
+                                <img src="/assets/images/discover_combine.png" alt="image" height="300" width="450" />
                             </div>
                         </div>
                         <div className="col-md-6">
@@ -23,7 +23,7 @@ function DiscoverSection() {
                                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit.
                                     Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel,
                                     nisi.</p>
-                                <img src="./assets/images/sign.png" alt="sign" />
+                                <img src="/assets/images/sign.png" alt="sign" />
                             </div>
                         </div>
                     </div>

@@ -21,14 +21,14 @@ function SpecialItem({ imageUrl, title, description, price, category }) {
 
 function TodaysSpecialSection() {
     const specials = [
-        { imageUrl: "./assets/images/sp1.jpg", title: "CAMPHO LINDO CHICKEN", description: "Praesent dapibus, neque id cursus faucibus, tortor neque", price: "$20.15", category: "Dinners" },
+        { imageUrl: "/assets/images/sp1.jpg", title: "CAMPHO LINDO CHICKEN", description: "Praesent dapibus, neque id cursus faucibus, tortor neque", price: "$20.15", category: "Dinners" },
         { imageUrl: null, title: "CAMPHO LINDO CHICKEN", description: "Praesent dapibus, neque id cursus faucibus, tortor neque", price: "$20.15", category: "Breakfast" },
-        { imageUrl: "./assets/images/sp2.jpg", title: "CAMPHO LINDO CHICKEN", description: "Praesent dapibus, neque id cursus faucibus, tortor neque", price: "$20.15", category: "Desserts" },
+        { imageUrl: "/assets/images/sp2.jpg", title: "CAMPHO LINDO CHICKEN", description: "Praesent dapibus, neque id cursus faucibus, tortor neque", price: "$20.15", category: "Desserts" },
         { imageUrl: null, title: "CAMPHO LINDO CHICKEN", description: "Praesent dapibus, neque id cursus faucibus, tortor neque", price: "$20.15", category: "Breakfast" },
         { imageUrl: null, title: "CAMPHO LINDO CHICKEN", description: "Praesent dapibus, neque id cursus faucibus, tortor neque", price: "$20.15", category: "Breakfast" },
-        { imageUrl: "./assets/images/sp3.jpg", title: "CAMPHO LINDO CHICKEN", description: "Praesent dapibus, neque id cursus faucibus, tortor neque", price: "$20.15", category: "Specials" },
+        { imageUrl: "/assets/images/sp3.jpg", title: "CAMPHO LINDO CHICKEN", description: "Praesent dapibus, neque id cursus faucibus, tortor neque", price: "$20.15", category: "Specials" },
         { imageUrl: null, title: "CAMPHO LINDO CHICKEN", description: "Praesent dapibus, neque id cursus faucibus, tortor neque", price: "$20.15", category: "Breakfast" },
-        { imageUrl: "./assets/images/sp4.jpg", title: "CAMPHO LINDO CHICKEN", description: "Praesent dapibus, neque id cursus faucibus, tortor neque", price: "$20.15", category: "Desserts" }
+        { imageUrl: "/assets/images/sp4.jpg", title: "CAMPHO LINDO CHICKEN", description: "Praesent dapibus, neque id cursus faucibus, tortor neque", price: "$20.15", category: "Desserts" }
         
     ];
 

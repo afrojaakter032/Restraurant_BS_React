@@ -24,10 +24,10 @@ function RestrontsSection() {
                         <div className="col-md-6">
                             <div className="d-flex gap-2">
                                 <div className="mt-4">
-                                    <img src="./assets/images/ab3.jpg" alt="image" height="auto" width="auto" />
+                                    <img src="/assets/images/ab3.jpg" alt="image" height="auto" width="auto" />
                                 </div>
                                 {/* <!-- <div>
-                            <img src="./assets/images/ab4.jpg" alt="image" height="auto" width="auto">
+                            <img src="/assets/images/ab4.jpg" alt="image" height="auto" width="auto">
                         </div> --> */}
                             </div>
                         </div>

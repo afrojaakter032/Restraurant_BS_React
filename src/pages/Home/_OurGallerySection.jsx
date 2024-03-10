@@ -18,14 +18,14 @@ function GalleryItem({ imageUrl, title, category }) {
 
 function OurGallerySection() {
     const galleryItems = [
-        { imageUrl: "./assets/images/g1.jpg", title: "ALIQUAM TINCIDUNT", category: "Dessert, Restaurant" },
-        { imageUrl: "./assets/images/g2.jpg", title: "ALIQUAM TINCIDUNT", category: "Dinner" },
-        { imageUrl: "./assets/images/g3.jpg", title: "ALIQUAM TINCIDUNT", category: "Restaurant" },
-        { imageUrl: "./assets/images/g4.jpg", title: "ALIQUAM TINCIDUNT", category: "Restaurant" },
-        { imageUrl: "./assets/images/g5.jpg", title: "ALIQUAM TINCIDUNT", category: "Dinner" },
-        { imageUrl: "./assets/images/g6.jpg", title: "ALIQUAM TINCIDUNT", category: "Dinner" },
-        { imageUrl: "./assets/images/g7.jpg", title: "ALIQUAM TINCIDUNT", category: "Dinner" },
-        { imageUrl: "./assets/images/g8.jpg", title: "ALIQUAM TINCIDUNT", category: "Dessert" },
+        { imageUrl: "/assets/images/g1.jpg", title: "ALIQUAM TINCIDUNT", category: "Dessert, Restaurant" },
+        { imageUrl: "/assets/images/g2.jpg", title: "ALIQUAM TINCIDUNT", category: "Dinner" },
+        { imageUrl: "/assets/images/g3.jpg", title: "ALIQUAM TINCIDUNT", category: "Restaurant" },
+        { imageUrl: "/assets/images/g4.jpg", title: "ALIQUAM TINCIDUNT", category: "Restaurant" },
+        { imageUrl: "/assets/images/g5.jpg", title: "ALIQUAM TINCIDUNT", category: "Dinner" },
+        { imageUrl: "/assets/images/g6.jpg", title: "ALIQUAM TINCIDUNT", category: "Dinner" },
+        { imageUrl: "/assets/images/g7.jpg", title: "ALIQUAM TINCIDUNT", category: "Dinner" },
+        { imageUrl: "/assets/images/g8.jpg", title: "ALIQUAM TINCIDUNT", category: "Dessert" },
     ];
 
     return (

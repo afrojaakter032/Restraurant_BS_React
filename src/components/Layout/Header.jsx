@@ -14,13 +14,13 @@ function Header() {
                         </div>
                         <div className="carousel-inner">
                             <div className="carousel-item active">
-                                <img src="./assets/images/slide3.jpg" className="d-block w-100" alt="slide1" />
+                                <img src="/assets/images/slide3.jpg" className="d-block w-100" alt="slide1" />
                             </div>
                             <div className="carousel-item">
-                                <img src="./assets/images/slider/hero-img-2-2.jpg" className="d-block w-100" alt="slide2" />
+                                <img src="/assets/images/slider/hero-img-2-2.jpg" className="d-block w-100" alt="slide2" />
                             </div>
                             <div className="carousel-item">
-                                <img src="./assets/images/slider/hero-img-2-3.jpg" className="d-block w-100" alt="slide3" />
+                                <img src="/assets/images/slider/hero-img-2-3.jpg" className="d-block w-100" alt="slide3" />
                             </div>
                         </div>
                         <div className="hero-section-overlay">
@@ -63,10 +63,11 @@ function Header() {
                                     <li className="nav-item dropdown">
                                         <a className="nav-link dropdown-toggle" href="#menu" data-bs-toggle="dropdown">MENU</a>
                                         <ul className="dropdown-menu">
-                                            <li><Link className="dropdown-item" to="/foodmenulist">Lunch</Link></li>
-                                            <li><a className="dropdown-item" href="#">Dinner</a></li>
-                                            <li><a className="dropdown-item" href="#">Desserts</a></li>
-                                            <li><a className="dropdown-item" href="#">Drinks</a></li>
+                                            <li><Link className="dropdown-item" to="/food-menu-list/breakfast">Breakfast</Link></li>
+                                            <li><Link className="dropdown-item" to="/food-menu-list/lunch">Lunch</Link></li>
+                                            <li><Link className="dropdown-item" to="/food-menu-list/dinner">Dinner</Link></li>
+                                            <li><Link className="dropdown-item" to="/food-menu-list/desserts">Desserts</Link></li>
+                                            <li><Link className="dropdown-item" to="/food-menu-list/drinks">Drinks</Link></li>
                                         </ul>
                                     </li>
                                     <li className="nav-item">
