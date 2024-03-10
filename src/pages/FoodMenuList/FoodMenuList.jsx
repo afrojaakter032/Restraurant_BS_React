@@ -1,6 +1,25 @@
 import { useParams } from "react-router-dom"
 import Layout from "../../components/Layout/Layout"
 
+function MenuItem({ imageUrl, title, description, price }) {
+    return (
+        <div className="col-md-6">
+            <div className="d-flex gap-3 menu-item-card">
+                {imageUrl && (
+                    <div className="position-relative">
+                        <img src={imageUrl} alt="image" />
+                        <div className="menu-bedge">New</div>
+                    </div>
+                )}
+                <div className="w-100">
+                    <h4>{title}</h4>
+                    <p>{description}</p>
+                </div>
+                <div className="text-primary text-end">{price}</div>
+            </div>
+        </div>
+    );
+}
 function FoodMenuList() {
     let {slug} = useParams();
 
@@ -18,12 +37,12 @@ function FoodMenuList() {
     return (
         <>
             <Layout>
-                {/* <section>
+                <section>
                     <div className="row mt-3 p-5">
                         <div className="col-md-12 text-center mb-5 text-primary">
                             <h1 className="text-capitalize">{slug}</h1>
                         </div>
-                        <div className="col-md-6">
+                        {/* <div className="col-md-6">
                             <div className="d-flex gap-3 menu-item-card">
                                 <div className="position-relative">
                                     <img src="/assets/images/t1.jpg" alt="image" />
@@ -127,9 +146,9 @@ function FoodMenuList() {
                                 </div>
                                 <div className="text-primary text-end">$20.15</div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
-                </section> */}
+                </section>
                 <div className="row mt-3 p-5">
                             {menuItems.map((item, index) => (
                                 <MenuItem
