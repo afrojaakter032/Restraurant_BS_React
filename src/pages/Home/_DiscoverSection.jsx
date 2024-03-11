@@ -2,7 +2,7 @@ function DiscoverSection() {
     return (
         <>
             <section className="discover-section mt-150">
-                <div className="container-fluid">
+                <div className="container">
                     <div className="text-center col-md-12">
                         <h1>Discover Our Story</h1>
                         <div className="hr mb-2"></div>
@@ -11,7 +11,7 @@ function DiscoverSection() {
                             malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede
                         </p>
                     </div>
-                    <div className="row mt-4 p-3">
+                    <div className="row mt-4">
                         <div className="col-md-6">
                             <div>
                                 <img src="/assets/images/discover_combine.png" alt="image" height="300" width="450" />

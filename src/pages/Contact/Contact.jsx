@@ -5,7 +5,7 @@ function Contact() {
         <>
             <Layout>
                 <section className="get-in-touch-section" id="contact">
-                    <div className="container-fluid">
+                    <div className="container">
                         <div className="row">
                             <div className="col-md-12 text-center mt-5">
                                 <h1>Get in Touch</h1>
@@ -31,9 +31,9 @@ function Contact() {
                             <div className="col-md-4 text-center p-2">
                                 <h2>Open Hours</h2>
                                 <div className="text-color">Monday — Thursday</div>
-                                <div>8 am — 11 pm</div>
+                                <div className="text-white">8 am — 11 pm</div>
                                 <div className="text-color">Friday — Sunday</div>
-                                <div>11 am — 11 pm</div>
+                                <div className="text-white">11 am — 11 pm</div>
                                 <p>Note: Restaurant is closed on holidays.</p>
                             </div>
                             <div className="col-md-4 text-center p-2">

@@ -34,7 +34,7 @@ function TodaysSpecialSection() {
 
     return (
         <section className="todays-special-section mt-150" id="todays-special">
-            <div className="container-fluid">
+            <div className="container">
                 <div className="text-center col-md-12 pt-4">
                     <h1>Today's Special</h1>
                     <div className="hr mb-2"></div>

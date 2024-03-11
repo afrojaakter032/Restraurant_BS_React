@@ -1,24 +1,5 @@
 import React from 'react';
-
-function MenuItem({ imageUrl, title, description, price }) {
-    return (
-        <div className="col-md-6">
-            <div className="d-flex gap-3 menu-item-card">
-                {imageUrl && (
-                    <div className="position-relative">
-                        <img src={imageUrl} alt="image" />
-                        <div className="menu-bedge">New</div>
-                    </div>
-                )}
-                <div className="w-100">
-                    <h4>{title}</h4>
-                    <p>{description}</p>
-                </div>
-                <div className="text-primary text-end">{price}</div>
-            </div>
-        </div>
-    );
-}
+import MenuItem from '../../components/MenuItem';
 
 function OurMenuSection() {
     const menuItems = [
@@ -34,7 +15,7 @@ function OurMenuSection() {
 
     return (
         <section className="our-menu-section mt-150" id="menu">
-            <div className="container-fluid">
+            <div className="container">
                 <div className="row">
                     <div className="text-center col-md-12 ">
                         <h1>Our Menu</h1>
@@ -49,20 +30,20 @@ function OurMenuSection() {
                                 <button className="nav-link active" id="pills-lunch-tab" data-bs-toggle="pill" data-bs-target="#pills-lunch" type="button" role="tab" aria-controls="pills-lunch" aria-selected="true">Lunch</button>
                             </li>
                             <li className="nav-item menu-nav-item" role="presentation">
-                                <button className="nav-link" id="pills-dinner-tab" data-bs-toggle="pill" data-bs-target="#pills-dinner" type="button" role="tab" aria-controls="pills-dinner" aria-selected="false">Dinner</button>
+                                <button className="nav-link" id="pills-dinner-tab" data-bs-toggle="pill" data-bs-target="#pills-lunch" type="button" role="tab" aria-controls="pills-dinner" aria-selected="false">Dinner</button>
                             </li>
                             <li className="nav-item menu-nav-item" role="presentation">
-                                <button className="nav-link" id="pills-desserts-tab" data-bs-toggle="pill" data-bs-target="#pills-desserts" type="button" role="tab" aria-controls="pills-desserts" aria-selected="false">Desserts</button>
+                                <button className="nav-link" id="pills-desserts-tab" data-bs-toggle="pill" data-bs-target="#pills-lunch" type="button" role="tab" aria-controls="pills-desserts" aria-selected="false">Desserts</button>
                             </li>
                             <li className="nav-item menu-nav-item" role="presentation">
-                                <button className="nav-link" id="pills-drinks-tab" data-bs-toggle="pill" data-bs-target="#pills-drinks" type="button" role="tab" aria-controls="pills-drinks" aria-selected="false">Drinks</button>
+                                <button className="nav-link" id="pills-drinks-tab" data-bs-toggle="pill" data-bs-target="#pills-lunch" type="button" role="tab" aria-controls="pills-drinks" aria-selected="false">Drinks</button>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div className="tab-content" id="pills-tabContent">
                     <div className="tab-pane fade show active" id="pills-lunch" role="tabpanel" aria-labelledby="pills-lunch-tab" tabIndex="0">
-                        <div className="row mt-3 p-5">
+                        <div className="row mt-3 g-3">
                             {menuItems.map((item, index) => (
                                 <MenuItem
                                     key={index}

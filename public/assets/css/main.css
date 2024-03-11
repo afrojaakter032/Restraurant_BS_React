@@ -323,11 +323,12 @@ img {
     color: var(--primary);
 }
 .get-in-touch-section .send-btn {
-    background-color: 1px solid #e5e5e5;
+    border: 1px solid #e5e5e5;
+    color: #fff;
 }
 .get-in-touch-section .send-btn:hover {
     background-color: var(--primary);
-    color: #fff;
+    
 }
 
 .btn-social-icon {

@@ -2,7 +2,7 @@ function ReservationSection() {
     return (
         <>
             <section className="reservation-section mt-150 p-5" id="reservation">
-                <div className="container-fluid">
+                <div className="container">
                     <div className="row">
                         <div className="col-md-12 mt-5 p-3">
                             <h1>Make Reservation</h1>

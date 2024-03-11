@@ -27,7 +27,7 @@ function NoticeSection() {
 
     return (
         <section className="notice-section mt-150">
-            <div className="container-fluid">
+            <div className="container">
                 <div className="row g-4">
                     <div className="col-md-12 text-center mb-3">
                         <div className="text-notice fs-2">NOTICE</div>

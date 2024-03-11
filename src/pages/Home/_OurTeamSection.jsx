@@ -30,7 +30,7 @@ function OurTeamSection() {
 
     return (
         <section className="our-team-section mt-150">
-            <div className="container-fluid">
+            <div className="container">
                 <div className="row">
                     <div className="text-center col-md-12 pt-4">
                         <h1>Meet Our Team</h1>

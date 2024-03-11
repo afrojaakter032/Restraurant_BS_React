@@ -26,7 +26,7 @@ function ExperienceSection() {
 
     return (
         <section className="experience-section mt-150 p-5">
-            <div className="container-fluid">
+            <div className="container">
                 <div className="row">
                     {sections.map(section => (
                         <div className="col-md-3 text-center" key={section.id}>

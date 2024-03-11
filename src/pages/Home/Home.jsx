@@ -7,11 +7,15 @@ import TodaysSpecialSection from "./_TodaysSpecialSection"
 import OurMenuSection from "./_OurMenuSection"
 import OurGallerySection from "./_OurGallerySection"
 import NoticeSection from "./_NoticeSection"
+import ReservationSection from "./_ReservationSection"
+import SliderSection from "./_SliderSection"
 
 function Home() {
     return (
         <>
             <Layout>
+                <SliderSection />
+                
                 <DiscoverSection />
 
                 <RestrontsSection />
@@ -20,7 +24,7 @@ function Home() {
 
                 <OurMenuSection />
 
-                <RestrontsSection />
+                <ReservationSection />
 
                 <OurTeamSection />
 
