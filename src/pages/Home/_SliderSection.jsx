@@ -12,20 +12,33 @@ function SliderSection () {
                         <div className="carousel-inner">
                             <div className="carousel-item active">
                                 <img src="/assets/images/slide3.jpg" className="d-block w-100" alt="slide1" />
+                                <div className="hero-section-overlay">
+                                    <div className="hero-text">
+                                        <h1>Enjoy Our Food</h1>
+                                        <p>High-className professional service</p>
+                                    </div>
+                                </div>
                             </div>
                             <div className="carousel-item">
                                 <img src="/assets/images/slider/hero-img-2-2.jpg" className="d-block w-100" alt="slide2" />
+                                <div className="hero-section-overlay">
+                                    <div className="hero-text">
+                                        <h1>Elegant Interior and Design</h1>
+                                        <p>High-className professional service</p>
+                                    </div>
+                                </div>
                             </div>
                             <div className="carousel-item">
                                 <img src="/assets/images/slider/hero-img-2-3.jpg" className="d-block w-100" alt="slide3" />
+                                <div className="hero-section-overlay">
+                                    <div className="hero-text">
+                                        <h1>Tradition & Passion</h1>
+                                        <p>Only the Best ingredients for our dishes</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div className="hero-section-overlay">
-                            <div className="hero-text">
-                                <h1>Enjoy Our Food</h1>
-                                <p>High-className professional service</p>
-                            </div>
-                        </div>
+                        
                         <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
                             data-bs-slide="prev">
                             <span className="carousel-control-prev-icon" aria-hidden="true"></span>

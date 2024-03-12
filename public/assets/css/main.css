@@ -47,9 +47,12 @@ img {
 
 /* header section */
 
-/* hero section */
-.carousel-inner {
+/* hero section/slider section */
+.carousel-item {
     position: relative;
+}
+.carousel-item img {
+    height: calc(100vh - 70px);
 }
 .hero-section-overlay {
     position: absolute;
