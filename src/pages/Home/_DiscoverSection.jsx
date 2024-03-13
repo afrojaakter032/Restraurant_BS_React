@@ -1,7 +1,7 @@
 function DiscoverSection() {
     return (
         <>
-            <section className="discover-section mt-150">
+            <section className="discover-section mt-150" id="discover-section">
                 <div className="container">
                     <div className="text-center col-md-12">
                         <h1>Discover Our Story</h1>

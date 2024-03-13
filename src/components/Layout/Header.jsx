@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 
 function Header() {
@@ -19,10 +20,10 @@ function Header() {
                                         <Link className="nav-link active" aria-current="page" to="/">HOME</Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link" href="#">ABOUT</a>
+                                        <HashLink className="nav-link" to="/#discover-section">ABOUT</HashLink>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link" href="#todays-special">TODAY'S SPECIAL</a>
+                                        <HashLink className="nav-link" href="/#todays-special">TODAY'S SPECIAL</HashLink>
                                     </li>
                                     <li className="nav-item dropdown">
                                         <a className="nav-link dropdown-toggle" href="#menu" data-bs-toggle="dropdown">MENU</a>
@@ -35,16 +36,16 @@ function Header() {
                                         </ul>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link" href="#reservation">RESERVATION</a>
+                                        <HashLink className="nav-link" to="/#reservation">RESERVATION</HashLink>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link" href="#gallery">GALLERY</a>
+                                        <HashLink className="nav-link"to="/#gallery">GALLERY</HashLink>
                                     </li>
                                     <li className="nav-item">
                                         <Link className="nav-link" to="/contact">CONTACT</Link>
                                     </li>
                                     <li className="nav-item ">
-                                        <a className="nav-link">BLOG</a>
+                                        <HashLink className="nav-link" to="/#notice-section">NOTICE</HashLink>
                                     </li>
                                     <li className="nav-item">
                                         <a className="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal"><i

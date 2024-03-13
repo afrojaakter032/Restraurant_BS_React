@@ -26,7 +26,7 @@ function NoticeSection() {
     ];
 
     return (
-        <section className="notice-section mt-150">
+        <section className="notice-section mt-150" id='notice-section'>
             <div className="container">
                 <div className="row g-4">
                     <div className="col-md-12 text-center mb-3">

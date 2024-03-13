@@ -47,6 +47,7 @@ function OurMenuSection() {
                             {menuItems.map((item, index) => (
                                 <MenuItem
                                     key={index}
+                                    indexNo={index}
                                     imageUrl={item.imageUrl}
                                     title={item.title}
                                     description={item.description}
