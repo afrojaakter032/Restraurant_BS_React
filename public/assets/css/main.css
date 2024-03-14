@@ -277,6 +277,15 @@ img {
     color: white;
     border: none;
 }
+/* notice deatails section */
+.notice-details-section img {
+    width: 100%;
+    height: auto;
+}
+.notice-details-section a {
+    color: #999999 !important;
+}
+
 /* our-gallery section */
 
 .gallery-nav-bar a {
