@@ -1,19 +1,6 @@
 import React from 'react';
-
-function NoticeCard({ imageUrl, title, content }) {
-    return (
-        <div className="col-md-4">
-            <div className="card" style={{ width: "18rem" }}>
-                <img src={imageUrl} className="card-img-top" alt="image" />
-                <div className="card-body">
-                    <h5 className="card-title">{title}</h5>
-                    <p className="card-text">{content}</p>
-                    <a href="#" className="btn text-primary">Read More...</a>
-                </div>
-            </div>
-        </div>
-    );
-}
+import NoticeCard from '../../components/NoticeCard';
+import { Link } from 'react-router-dom';
 
 function NoticeSection() {
     const notices = [
@@ -37,6 +24,9 @@ function NoticeSection() {
                         <NoticeCard key={index} imageUrl={notice.imageUrl} title={notice.title} content={notice.content} />
                     ))}
                 </div>
+            </div>
+            <div className='text-center p-3'>
+                <Link to="/notice-list" className='btn btn-primary'>Show More</Link>
             </div>
         </section>
     );

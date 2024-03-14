@@ -6,6 +6,8 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Home from './pages/Home/Home.jsx'
 import Contact from './pages/Contact/Contact.jsx'
 import FoodMenuList from './pages/FoodMenuList/FoodMenuList.jsx'
+import NoticeList from './pages/NoticeList/NoticeList.jsx'
+import NoticeDetails from './pages/NoticeDetails/NoticeDetails.jsx'
 
 const router = createBrowserRouter([
   {
@@ -19,6 +21,14 @@ const router = createBrowserRouter([
   {
     path: "/food-menu-list/:slug",
     element: <FoodMenuList />,
+  },
+  {
+    path: "/notice-list",
+    element: <NoticeList />,
+  },
+  {
+    path: "/notice-details",
+    element: <NoticeDetails />,
   },
 
 

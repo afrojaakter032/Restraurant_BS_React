@@ -44,14 +44,16 @@ function OurTeamSection() {
                             <div className="swiper-wrapper">
                                 {teamMembers.map((member, index) => (
                                     <div className="swiper-slide" key={index}>
-                                        <img src={member.image} alt="image" />
+                                        <div className='d-flex justify-content-center align-items-center'>
+                                            <img src={member.image} alt="image" />
+                                        </div>
                                         <div className="text-center mt-3">
                                             <h4>{member.name}</h4>
                                             <div>{member.role}</div>
                                             <div className="hr mb-2"></div>
                                             <p>{member.description}</p>
                                         </div>
-                                        <div className="text-center gap-2">
+                                        <div className="text-center d-flex justify-content-center align-items-center fs-5 gap-2">
                                             <a href="#"><i className="fa-brands fa-facebook-f"></i></a>
                                             <a href="#"><i className="fa-brands fa-twitter"></i></a>
                                             <a href="#"><i className="fa-brands fa-google-plus-g"></i></a>

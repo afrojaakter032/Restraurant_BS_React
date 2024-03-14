@@ -124,6 +124,10 @@ img {
     text-indent: 33px;
     border-radius: 10px;
 }
+.modal-backdrop {
+    z-index: 1 !important;
+}
+
   /* discover section */
 .hr {
     display: inline-block;
@@ -245,6 +249,9 @@ img {
 .our-team-section .hr {
     width: 30px;
 }
+.our-team-section a {
+    color: #999999 !important;
+}
 
 /* experience section */
 
@@ -264,6 +271,11 @@ img {
 .notice-section .card {
     height: 100% !important;
     width: 100% !important;
+}
+.notice-section .btn-primary {
+    background-color: var(--primary) !important;
+    color: white;
+    border: none;
 }
 /* our-gallery section */
 
@@ -285,6 +297,9 @@ img {
 }
 .gallery-item img {
     transition: 0.5s;
+}
+.gallery-item img {
+    width: 100%;
 }
 
 .gallery-overlay {
