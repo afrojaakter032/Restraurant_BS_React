@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
 
 function MenuItem({ indexNo, imageUrl, title, description, price}) {
-    console.log(indexNo)
+    
     return (
         <>
             <div className="col-md-6">
@@ -11,7 +12,7 @@ function MenuItem({ indexNo, imageUrl, title, description, price}) {
                     </div>
                     
                     <div className="w-100">
-                        <h4>{title}</h4>
+                        <Link to="/food-menu-details" className="text-decoration-none text-dark"><h4>{title}</h4></Link>
                         <p>{description}</p>
                     </div>
                     <div className="text-primary text-end">{price}</div>
