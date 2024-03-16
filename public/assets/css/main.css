@@ -222,6 +222,9 @@ img {
     padding: 5px;
 }
 /* food menu details  */
+.food-menu-details-section a {
+    color: #999999 !important;
+}
 
 
 /* reservation section starts here */
@@ -271,10 +274,7 @@ img {
 .text-notice {
     color: #000;
 }
-.notice-section .card {
-    height: 100% !important;
-    width: 100% !important;
-}
+
 .notice-section .btn-primary {
     background-color: var(--primary) !important;
     color: white;
@@ -285,6 +285,7 @@ img {
     width: 100%;
     height: auto;
 }
+
 .notice-details-section a {
     color: #999999 !important;
 }

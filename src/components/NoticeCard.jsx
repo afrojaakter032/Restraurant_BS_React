@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function NoticeCard({ imageUrl, title, content }) {
     return (
         <div className="col-md-4">
-            <div className="card" style={{ width: "18rem" }}>
+            <div className="card">
                 <img src={imageUrl} className="card-img-top" alt="image" />
                 <div className="card-body">
                     <h5 className="card-title">{title}</h5>

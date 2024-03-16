@@ -23,7 +23,7 @@ function Header() {
                                         <HashLink className="nav-link" to="/#discover-section">ABOUT</HashLink>
                                     </li>
                                     <li className="nav-item">
-                                        <HashLink className="nav-link" href="/#todays-special">TODAY'S SPECIAL</HashLink>
+                                        <HashLink className="nav-link" to="/#todays-special">TODAY'S SPECIAL</HashLink>
                                     </li>
                                     <li className="nav-item dropdown">
                                         <a className="nav-link dropdown-toggle" href="#menu" data-bs-toggle="dropdown">MENU</a>
